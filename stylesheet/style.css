@@ -1,7 +1,7 @@
  body, html{
-            overflow: hidden;
+            /* overflow: hidden;
             margin: 0px;
-            padding: 0px;
+            padding: 0px; */
         }
         header{
             height: 100vh;
@@ -24,17 +24,20 @@
         }
 
         .navbar{
-            margin: auto;
-            margin-bottom: 500px;
-            width: 60%;
-            height: 70px;
-            background-color: rgb(19, 19, 79);
+            position: sticky;
+            top: 0;
+            margin: 0 auto;
+            width: 65%;
+            height: 55px;
+            background-color: rgb(44, 44, 68);
             text-align: center;
         }
 
         .navbarin{
             width: 100%;
             padding-top: 0.3px;
+            display: flex;
+            text-align: center;
             
         }
 
@@ -46,15 +49,17 @@
 
         ul{
             list-style: none;
+            text-align: center;
             display: flex;
-            margin: auto;
-            padding: auto;
+            width: match-parent;
+            margin: auto auto;
+            padding: 0px 0px;
         }
 
         li{
-            margin-left: 30px;
-           padding-right: 200px;
-            margin-top: 10px;
+            text-align: center;
+            padding: 19px 70px;
+
         }
 
         a{
@@ -62,9 +67,99 @@
             text-decoration: none;
         }
 
-
-        .afternavbar{
-            z-index: -1;
+        .sub-menu-1{
+            display: none;
         }
 
+        .navbarin ul li:hover .sub-menu-1{
+            display: block;
+            position: absolute;
+            background-color: rgb(44, 44, 68);
+            margin-top: 15px;
+            margin-left: -5px;
+        }
+
+        .navbarin ul li:hover .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+
+        .hiring{
+            text-align: center;
+        }
+
+        .hiring{
+            width: 100%;
+            margin-top: -400px;
+        }
+
+        .workforce{
+            height: 300px;
+            width: 1200px;
+            border-radius: 10px;
+            background-color: black;
+            margin: -90px auto 0px auto;
+            display: flex;
+        }
+
+        .work{
+            width: 300px;
+            height: 100%;
+        }
+
+        .work p{
+            color: white;
+            font-size: large;
+        }
+
+        .work p strong{
+            
+            font-size: larger;
+        }
+
+        .methodology{
+            background-color: rgb(126, 99, 133);
+            text-align: center;
+            border-left: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .workwithus{
+            background-color: rgb(99, 133, 126);
+            text-align: center;
+        }
+
+        .outreachprograms{
+            background-color: rgb(63, 125, 180);
+            text-align: center;
+        }
+
+        .events{
+            background-color: rgb(255, 100, 100);
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .welcome{
+            text-align: center;
+            width: 100%;
+        }
+
+        .container{
+            margin: 100px auto 0 auto;
+            width: 100%;
+        }
+
+        .container p{
+            font-size: large;
+        }
+
+        .row{
+            display: flex;
+            height: 300px;
+            width: 1200px;
+            box-shadow: 10px 5px 5px 0px black;
+        }
 
