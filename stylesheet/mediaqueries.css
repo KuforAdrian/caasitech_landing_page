@@ -1,0 +1,138 @@
+@media screen and (max-width: 1024px){
+    .menu-baricon{
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 30px 40px;
+        border-radius: 50%;
+        background-color: rgb(44, 44, 68);
+        opacity: 0.8;
+        justify-content: center;
+    }
+
+    .menu-baricon svg:hover{
+       cursor: pointer;
+    }
+
+    .menu-baricon svg{
+       color: white;
+       margin: 9px ;
+    }
+
+    .buttondiv{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .firstheader{
+        margin-top: 100px;
+    }
+
+    .buttondiv{
+        display: block;
+        height: 60px;
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .applybtn{
+        margin: auto;
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        border-color: rgb(44, 44, 68);
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 1000;
+        color: rgb(44, 44, 68);
+    }
+
+    .applybtn:hover{
+        background-color: rgb(44, 44, 68);
+        color: white;
+        cursor: pointer;
+    }
+
+
+    /* Workforce section*/
+    .hiringsection{
+
+    }
+
+    .workforce{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .workforce1{
+        width: 100%;
+        flex-direction: row;
+        
+    }
+
+    .workforce2{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .methodology{
+        border-bottom-left-radius: 0px;
+    }
+
+    .workwithus{
+        border-top-right-radius: 10px;
+    }
+
+    .outreachprograms{
+        border-bottom-left-radius: 10px;
+    }
+
+    .events{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    /*Work with us Section*/
+    .workwithusul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .firstjobset{
+        width:100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .secondjobset{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .containerworkwithusection ul li{
+        width: 50%;
+    }
+
+    .containerworkwithusection ul li .image-holder{
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerworkwithusection ul li .image-holder img{
+        width: 100%;
+        height: 50%;
+    }
+}
+

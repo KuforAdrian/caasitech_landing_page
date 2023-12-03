@@ -1,21 +1,28 @@
         body, html{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             font-size: 15px;
-            line-height: 1.8em;
             color: #000000;
             background-color: rgb(255, 255, 255);
         }
 
-        body{
-            height: 100vh;
+        /* mobile menu*/
+        .menu-baricon{
+            display: none;
         }
 
+        .buttondiv{
+            display: none;
+        }
+
+/* First Section */
         .firstheader{
            margin-top: -20px;
            height: 600px;
+           width: 100vw;
         }
 
         .picture{
@@ -36,6 +43,7 @@
 
         .navbar{
             position: sticky;
+            display: flex;
             top: 0;
             margin: 20px auto 0px auto;
             width: 65%;
@@ -44,9 +52,40 @@
             text-align: center;
         }
 
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            font-weight: bold;
+            font-size: small;
+            padding: 15px 10px;
+            text-align: center;
+        }
+
+        .home, .dropdown, .contact{
+            text-align: center;
+            height: 100%;
+        }
+
+        .home, .contact{
+            width: 220px;
+        }
+
+        .dropdown, .home{
+            border-right: 1px solid white;
+        }
+
+        .dropdown {
+            width: 280px;
+            position: relative;
+            display: inline-block;
+        }
+
         .navbarin{
             width: 100%;
-            padding-top: 0.3px;
+            padding-top: auto;
+            padding-bottom: auto;
             display: flex;
             text-align: center;
         }
@@ -57,10 +96,10 @@
 
         }
 
-        ul{
+        .navbarin ul{
             list-style: none;
             text-align: center;
-            display: flex;
+            display: table-row;
             width: match-parent;
             margin: auto auto;
             padding: 0px 0px;
@@ -69,12 +108,8 @@
         li{
             text-align: center;
             padding: 19px 70px;
+            display: table-cell;
 
-        }
-
-        a{
-            color: white;
-            text-decoration: none;
         }
 
         .sub-menu-1{
@@ -94,70 +129,89 @@
             margin: 10px;
         }
 
-        .hiringsection{
-            margin-top: -130px;
-        }
 
-        .hiring{
+    /*Hiring Section*/
+        .hiringsection{
+            margin-top: 70px;
+            width: 100vw;
             text-align: center;
         }
 
         .hiring{
+            text-align: center;
             width: 100%;
-            margin-top: 0px;
+            margin: 40px auto;
+        }
+
+        .hiring img{
+            width: 100%;
         }
 
         .workforce{
-            height: 300px;
-            width: 1200px;
+            display: flex;
+            justify-content: center;
+            width: 80%;
             border-radius: 10px;
             background-color: black;
             margin: -90px auto 0px auto;
+        }
+
+        .workforce1{
+            width: 50%;
+            display: flex;
+        }
+
+        .workforce2{
+            width: 50%;
             display: flex;
         }
 
         .work{
-            width: 25%;
-            height: 100%;
+            width: 50%;
+            text-align: center;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            padding: 25px;
+
+        }
+
+        .work h2{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
         .work p{
             color: white;
-            font-size: large;
-            justify-content: center;
+            font-size: medium;
         }
 
-        .work p strong{
-            font-size: larger;
+        .work > p{
+            line-height: 2;
         }
 
         .methodology{
             background-color: rgb(126, 99, 133);
-            text-align: center;
-            border-left: 10px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
 
         .workwithus{
             background-color: rgb(99, 133, 126);
-            text-align: center;
         }
 
         .outreachprograms{
             background-color: rgb(63, 125, 180);
-            text-align: center;
         }
 
         .events{
             background-color: rgb(255, 100, 100);
-            text-align: center;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
 
+
+    /*welcome section*/
         .welcome{
             margin-bottom: 0px;
             text-align: center;
@@ -233,18 +287,22 @@
             justify-content: center;
             width: 100%;
         }
-        
+
+
+        /*Work with us section*/
         .workwithusection{
-            background: rgba(var(--primary-color-rgb),.05);
-            width: 100%;
-            height: 100vh;
+            background: rgb(243, 243, 243);
+            padding: 96px 0px;
+            width: 100vw;
+            /* height: 900px; */
             text-align: center;
         }
 
         .containerworkwithusection{
             max-width: 1170px;
+            height: fit-content;
             padding: 0 15px;
-            margin: 0 auto;
+            margin: 0px auto;
         }
 
         .header-part{
@@ -252,25 +310,44 @@
             margin: 0 auto 56px auto;
         }
 
+        .section-title{
+            font-size: 2rem;
+            font-weight: 1000;
+        }
+
         .workwithusul{
             display: flex;
+            height: fit-content;
             margin: 0 -6px 50px;
             padding: 0;
             box-sizing: border-box;
+            text-align: center;
+            list-style: none;
+        }
+
+        .firstjobset{
+            display: flex;
+            width: 50%;
+        }
+
+        .secondjobset{
+            display: flex;
+            width: 50%;
         }
 
         .containerworkwithusection ul li{
             float: none;
-            width: 25%;
+            width: 50%;
             list-style: none;
             padding: 0 6px;
-            margin-bottom: 12px;
+            /* margin-bottom: 12px; */
             text-align: center;
         }
 
         .containerworkwithusection ul li .image-holder{
             display: flex;
             height: 100%;
+            width: 100%;
             flex-direction: column;
             box-shadow: 0 4px 16px rgba(2,9,19,.04);
             border-radius: 4px;
@@ -281,8 +358,172 @@
         .containerworkwithusection ul li .image-holder img{
             width: 100%;
             vertical-align: top;
+            max-width: 100%;
+            border: 0;
+        }
+
+        .description{
+            display: block;
+            position: static;
+            padding: 24px 0px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: #fff;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .containerworkwithusection ul li .image-holder .description h2{
+            margin: 0 auto 8px auto;
+            margin-bottom: 8px;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .containerworkwithusection ul li .image-holder .description h2 a{
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        .containerworkwithusection ul li .image-holder .description p{
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: medium;
+        }
+
+        .learn-more{
+            color: var(--primary-color);
+            text-transform: none;
+            background: 0 0;
+            font-size: 1.125em;
+            line-height: 1.66;
+            padding: 0;
+            border: none;
+            font-weight: 500;
+            transition: all .2s;
+            text-decoration: none;
+        }
+
+        .learn-morebutton{
+            font-weight: 500;
+            background: 0 0;
+            border: 2px solid rgb(44, 44, 68);
+            border-radius: 4px;
+            color:  rgb(44, 44, 68);
+            padding: 14px 32px;
+            width: 100px;
+            text-transform: capitalize;
+            border-color: rgb(44, 44, 68);
+            font-size: .9em;
+            line-height: 1.66;
+            font-size: 1.125em;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .learn-morebutton:hover{
+            background-color: rgb(44, 44, 68);
+            color: white
+        }
+
+        /*jwfsection*/
+        .jwfsection{
+            margin-top: 0;
+            background: black;
+            height: fit-content;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .jwfsection h2 p{
+            color: white;
+        }
+
+        .jwfsectiondescription{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+        }
+
+        .containerjwfs{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 50px 15px;
+            justify-items: center;
+            width: 100%;
+        }
+
+        .headerjwfs{
+            width: 680px;
+            margin: 56px auto;
+            padding: 0 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .jwfsectiontitle{
+            margin: 0;
+        }
+
+        .headerjwfs h2{
+            margin: 0px auto;
+            color: white;
+            font-size: 2em;
+        }
+
+        .headerjwfs p{
+            color: white;
+            font-size: 100;
+        }
+
+        .jwfsbtn{
+            margin-top: 50px;
+        }
+
+        .buttonsjwf{
+            margin-top: 50px;
+            padding: 0 8px;
+            height: fit-content;
+            box-sizing: border-box;
+        }
+
+        .applynowjwf, .testimony{
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 2px solid white;
+            padding: 18px 40px 18px 40px;
+            margin: 0 10px; 
+        }
+
+        .applynowjwf:hover, .testimony:hover{
+            background-color: rgb(44, 44, 68);
+            color: white;
+            border-color: rgb(44, 44, 68);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /*Hiring Ceremony Section*/
+        .hiringceremony{
             
         }
+
+
+        
+
+
+
+
+
+
 
 
 
