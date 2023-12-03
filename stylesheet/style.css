@@ -288,6 +288,11 @@
             width: 100%;
         }
 
+        .counting{
+            font-size: 2em;
+            font-weight:lighter;
+        }
+
 
         /*Work with us section*/
         .workwithusection{
@@ -432,6 +437,7 @@
         /*jwfsection*/
         .jwfsection{
             margin-top: 0;
+            width: 100vw;
             background: black;
             height: fit-content;
             text-align: center;
@@ -513,7 +519,7 @@
 
         /*Hiring Ceremony Section*/
         .hiringceremony{
-            
+
         }
 
 
