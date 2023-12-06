@@ -63,36 +63,62 @@
             height: 100%;
             font-weight: bold;
             font-size: small;
-            padding: 15px 10px;
+           
             text-align: center;
         }
 
         .home, .dropdown, .contact{
             text-align: center;
             height: 100%;
+            display: flex;
         }
 
         .home, .contact{
-            width: 220px;
+            width: 14.5%;
+            text-align: center;
+            justify-content: center;
         }
+
+        .home a, .contact a{
+            padding: 15px 0;
+        }
+
+
 
         .dropdown, .home{
             border-right: 1px solid white;
+            
         }
 
         .dropdown {
-            width: 280px;
+            width: 25%;
             position: relative;
-            display: inline-block;
         }
 
-        .navbarin{
+        .more-padding{
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .more-padding a{
+            padding: 15px 0  15px 0px;
+            width: 80%;
+        }
+
+        .more-padding i{
+            padding: 15px 0px 15px 50px;
+            width: 20%;
+        }
+
+        /* .navbarin{
             width: 100%;
             padding-top: auto;
             padding-bottom: auto;
             display: flex;
             text-align: center;
-        }
+        } */
 
         img{
             margin-right: auto;
