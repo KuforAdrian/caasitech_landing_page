@@ -12,6 +12,11 @@
             color: #000000;
             background-color: rgb(255, 255, 255);
         }
+        
+        section{
+            height: fit-content;
+            width: 100vw;;
+        }
 
         /* mobile menu*/
         .menu-baricon{
@@ -245,7 +250,7 @@
         .welcome{
             margin-bottom: 0px;
             text-align: center;
-            width: 100%;
+            width: 100vw;
             background-color: rgb(255, 254, 254);
         }
 
@@ -551,7 +556,7 @@
         .hiringceremony{
             height: fit-content;
             /*border: 2px solid red;*/
-            width: 100%;
+            width: 100vw;
         }
 
         .ceremonyheader{
@@ -594,6 +599,7 @@
 
         /*Footer Section*/
         .footer-section{
+            width: 100vw;
             height: fit-content;
             background-color: rgb(44, 44, 75);
         }
@@ -726,6 +732,18 @@
             text-decoration: underline;
         }
 
+        .section{
+            width: 100vw;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .footer-section{
+            width: 100vw;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+       
       
 
 

@@ -136,3 +136,158 @@
     }
 }
 
+@media screen and (max-width: 412px){
+
+    section{
+        width: 100vw;;
+    }
+
+    .menu-baricon{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-baricon svg{
+        width: 30px;
+        height: 30px;
+        margin: 5px auto; 
+    }
+
+    .firstheader{
+        width: 100vw;
+        height: 300px;
+        margin-top: 25px;
+    }
+
+    .buttondiv{
+        margin-top: 50px;
+    }
+
+    .applybtn{
+        width: 40%;
+    }
+
+
+    .hiringsection{
+        width: 100vw;
+    }
+
+
+    .workforce1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .methodology, .workwithus{
+        width: 100%;
+    }
+
+    .methodology{
+        border-top-right-radius: 10px;
+    }
+
+    .workwithus{
+        border-top-right-radius: 0px;
+    }
+
+    .workforce2{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .outreachprograms, .events{
+        width: 100%;
+    }
+
+    .outreachprograms{
+        border-bottom-left-radius: 0px;
+    }
+
+    .events{
+        border-bottom-left-radius: 10px;
+    }
+
+    /*Welcome*/
+
+    .container{
+        height: fit-content;
+    }
+
+    .container2{
+        margin-top: 100px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 30px;
+        height: fit-content;
+        box-shadow: 2px 2px 5px 1px rgba(134, 134, 134, 0.1);
+        /* border: 2px solid green;*/
+    }
+    
+    .counter{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 0;
+    }
+
+    .year{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .training{
+        border-top-right-radius: 0px;
+        border-top-left-radius: 10px;
+    }
+
+    .year, .total, .countries{
+        border-bottom: 1px solid rgb(138, 138, 138);
+    }
+
+
+
+    /*Work with us Section*/
+    .workwithusection{
+        width: 100vw;
+    }
+
+    .workwithusul{
+
+    }
+
+    .firstjobset{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .secondjobset{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workwithusul .firstjobset li{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .workwithusul .secondjobset li{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .image-holder{
+        width: 100%;
+    }
+
+
+
+ }
